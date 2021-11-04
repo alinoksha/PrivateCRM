@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>PrivateCRM</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+        <script src='createOrder.js'></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="surname" style="margin: 10;">
+                Фамилия: <input type="text">
+            </div>
+            <div id="surname_error" style="color:Red; display: none">
+                Необходимо ввести фамилию
+            </div>
+            <div id="name" style="margin: 10;">
+                Имя: <input type="text">
+            </div>
+            <div id="name_error" style="color:Red; display: none">
+                Необходимо ввести имя
+            </div>
+            <div id="patronymic" style="margin: 10;">
+                Отчество: <input type="text">
+            </div>
+            <div id="phone" style="margin: 10;">
+                Телефон: <input type="tel" value="+7">
+            </div>
+            <div id="phone_error" style="color:Red; display: none">
+                Необходимо ввести номер телефона
+            </div>
+
+            <select id="diet" required="required">
+                <option value="">Рацион питания</option>
+            </select>
+            <div id="diet_error" style="color:Red; display: none">
+                Необходимо выбрать рацион питания
+            </div>
+
+            <div id="period" style="margin: 10;">
+                Период доставки:
+                C <input id="start" type="date">
+                По <input id="end" type="date">
+            </div>
+            <div id="period_error" style="color:Red; display: none">
+                Необходимо указать период доставки
+            </div>
+
+            <select id="schedule" required="required">
+                <option value="">Расписание доставки</option>
+            </select>
+            <div id="schedule_error" style="color:Red; display: none">
+                Необходимо выбрать расписание доставки
+            </div>
+
+            <div id="weekday">
+                Дни недели питания:
+                    <input type="checkbox" id="1" class="checkbox"><label for="1" class="label">пн</label>
+                    <input type="checkbox" id="2" class="checkbox"><label for="2" class="label">вт</label>
+                    <input type="checkbox" id="3" class="checkbox"><label for="3" class="label">ср</label>
+                    <input type="checkbox" id="4" class="checkbox"><label for="4" class="label">чт</label>
+                    <input type="checkbox" id="5" class="checkbox"><label for="5" class="label">пт</label>
+                    <input type="checkbox" id="6" class="checkbox"><label for="6" class="label">сб</label>
+                    <input type="checkbox" id="7" class="checkbox"><label for="7" class="label">вс</label>
+            </div>
+            <div id="weekday_error" style="color:Red; display: none">
+                Необходимо выбрать дни недели питания
+            </div>
+
+            <div id="comment" style="margin: 10;">
+                <label style="vertical-align: top;">Комментарий:</label>
+                <textarea></textarea>
+            </div>
+            <button id="submit" style="margin: 10;">Заказать доставку</button>
+        </div>
+    </body>
+</html>

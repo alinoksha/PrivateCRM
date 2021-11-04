@@ -1,0 +1,17 @@
+{
+    "client": {
+        "name": "Alina",
+        "surname": "Khizbullina",
+        "patronymic": "Failovna",
+        "phone": "9574344759"
+    },
+    "order": {
+        "date": 1635877379,
+        "diet": "daily",
+        "start": "2021-11-02",
+        "end": "2021-12-02",
+        "schedule": 3,
+        "weekday": 1111100,
+        "comment": "meow"
+    }
+}
