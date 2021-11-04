@@ -19,8 +19,9 @@ class DataBase
         if ($stmt === false) {
             return false;
         }
+        $res = $stmt->execute($params);
         $this->lastInsertId = $this->pdo->lastInsertId();
-        return $stmt->execute($params);
+        return $res;
     }
 
     public function findOne(string $sql, array $params = []): false|array
